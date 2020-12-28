@@ -1,0 +1,331 @@
+/*只放公共样式*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/iconfont.woff2') format('woff2'),
+      url('../fonts/iconfont.woff') format('woff'),
+      url('../fonts/iconfont.ttf') format('truetype'),
+      url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+/*注意更换路径*/
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*版心*/
+/*快捷导航开始了*/
+.fl {
+	float: left;
+}
+.fr	{
+	float: right;
+}
+.style_red {
+	color: #c81623;
+}
+.shortcut {
+	height: 31px;
+	line-height: 31px;
+	background-color: #f1f1f1;
+}
+.shortcut ul li {
+	float: left;
+	color: #61656b;
+	font-size: 14px;
+}
+.shortcut .fr ul li:nth-child(even) {
+	/*选择所有偶数的li*/
+	margin: 0 15px;
+}
+.shortcut .fr ul a:hover {
+    color: black;
+}
+.arrow-icon::after {
+	/*伪元素是行内元素*/
+	content: '\e7b2';
+	font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin-left: 6px;
+}
+/*header开始了*/
+.header {
+	position: relative;
+    height: 105px;
+}
+.logo {
+	position: absolute;
+	top: 20px;
+	width: 170px;
+	height: 61px;
+}
+.logo a {
+	display: block;
+	width: 170px;
+	height: 61px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 170px 61px;
+	font-size: 0;
+}
+.search {
+	position: absolute;
+	top: 20px;
+	left: 600px;
+    margin-left: -269px;
+	width: 538px;
+	height: 36px;
+	border: 2px solid #b1191a;
+}
+.search input {
+	float: left;
+	width: 455px;
+	height: 32px;
+	background: transparent;
+	text-indent: 1em;
+}
+.search button {
+	float: right;
+	width: 79px;
+	height: 32px;
+	background-color: #b1191a;
+	font-size: 16px;
+	color: #fff;
+}
+.hotwords {
+	position: absolute;
+	bottom: 20px;
+	left: 600px;
+    margin-left: -269px;
+}
+.hotwords a {
+	padding: 0 10px;
+}
+.hotwords a:hover {
+	color: black;
+}
+.shopcar {
+	position: absolute;
+	right: 50px;
+	top: 20px;
+	width: 150px;
+	height: 36px;
+	background-color: #f1f1f1;
+	border: 1px solid #c5c8c5;
+	text-align: center;
+	line-height: 36px;
+}
+.shopcar a {
+	float: left;
+    margin-top: 0;
+}
+.shopcar a:hover {
+	color: black;
+}
+.shopcar a::before {
+	float: left;
+	margin: 0 7px 0 12px;
+	content: "\e77a";
+	font-family: "iconfont";
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: #b1191a;
+}
+.shopcar a::after {
+	float: right;
+	margin-right: 10px;
+	content: "\e743";
+	font-family: "iconfont";
+	color: #61656b;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.shopcar .count {
+	position: absolute;
+	top: -8px;
+	left: 110px;
+	/*设置成左对齐，数字变大后将会向右显示*/
+	height: 14px;
+	background-color: #ee0d03;
+	padding: 1px 5px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 14px;
+	/*继承了父级的35px行高，因此要修改*/
+	border-radius: 7px 7px 7px 0;
+}
+.nav {
+	height: 47px;
+	border-bottom: 2px solid #b1191a;
+}
+.nav .dropdown {
+	float: left;
+	width: 210px;
+	height: 45px;
+	background-color: #b1191a;
+}
+.nav .navitems {
+	float: left;
+}
+.dropdown .dt {
+	width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+.dropdown .dd {
+	width: 210px;
+    height: 465px;
+    margin-top: 2px;
+    background-color: #c81623;
+}
+.dropdown .dd ul li {
+	height: 31px;
+	line-height: 31px;
+	margin-left: 2px;
+	padding-left: 10px;
+}
+.dropdown .dd ul li::after {
+	float: right;
+	content: "\e743";
+	font-family: "iconfont";
+	margin-right: 10px;
+	color: #fff
+}
+.dropdown .dd ul li:hover {
+	background-color: #fff;
+}
+.dropdown .dd ul li a {
+	font-size: 14px;
+	color: #fff;
+}
+.dropdown .dd ul li:hover a {
+	color: #c81623;
+}
+.navitems ul li {
+	float: left;
+}
+.navitems ul li a {
+	display: block;
+	height: 45px;
+	padding: 0 25px;
+	/*padding给a会增大a的范围，方便点击*/
+    font-size: 16px;
+    line-height: 45px;
+}
+.navitems ul li a:hover {
+	color: #c81623;
+	background-color: #f1f1f1;
+}
+.footer {
+	height: 415px;
+	background-color: #f1f1f1;
+	padding-top: 30px;
+}
+.mod_service {
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+}
+.mod_service ul li {
+	float: left;
+	width: 300px;
+	height: 50px;
+	padding-left: 35px;
+	padding-top: 5px;
+}
+.mod_service ul li h5 {
+	margin-right: 8px;
+}
+.mod_service ul li .d {
+	float: left;
+	width: 38px;
+	height: 42px;
+	background: url(../images/多快好省.png) no-repeat 0 -192px;
+}
+.mod_service ul li .k {
+	float: left;
+	width: 38px;
+	height: 42px;
+	background: url(../images/多快好省.png) no-repeat -40px -192px;
+}
+.mod_service ul li .h {
+	float: left;
+    width: 38px;
+	height: 42px;
+	background: url(../images/多快好省.png) no-repeat -81px -192px;
+}
+.mod_service ul li .s {
+	float: left;
+    width: 38px;
+	height: 42px;
+	background: url(../images/多快好省.png) no-repeat -122px -192px;
+}
+.mod_service ul li div p {
+	color: #010101;
+	font-size: 13px;
+}
+.mod_help {
+	height: 185px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+.mod_help dl {
+	width: 200px;
+	float: left;
+}
+.mod_help dl:last-child {
+    width: 90px;
+    font-size: 13px;
+    text-align: center;
+}
+.mod_help dl dt {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.mod_help dl dd {
+	height: 18px;
+}
+.mod_help dl dd a {
+	font-size: 13px;
+}
+.mod_help dl dd a:hover {
+	color: #c81623;
+}
+.mod_help dl dd img {
+	width: 90px;
+	margin-bottom: 5px;
+}
+.mod_copyright {
+	padding-top: 20px;
+}
+.links {
+	height: 20px;
+	margin: 0 0 0 120px;
+}
+.mod_copyright ul li {
+	float: left;
+	font-size: 12px;
+}
+.mod_copyright .links ul li a {
+	display: block;
+	height: 14px;
+}
+.mod_copyright .links ul li a:hover {
+	color: #c81623;
+}
+.mod_copyright .links ul li:nth-child(even) {
+	margin: 0 8px;
+}
+.mod_copyright .copyright {
+	color: #61656b;
+	text-align: center;
+	font-size: 14px;
+}

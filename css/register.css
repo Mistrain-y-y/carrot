@@ -1,0 +1,68 @@
+/*注册页的样式是单独的*/
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+header {
+	height: 84px;
+	border-bottom: 2px solid #c81523;
+}
+.logo {
+	padding-top: 18px;
+}
+img {
+	width: 170px;
+	height: 61px;
+} 
+.registerarea {
+	height: 522px;
+	border: 1px solid #ccc;
+	margin-top: 20px; 
+}
+.registerarea h3 {
+	height: 42px;
+	padding: 0 15px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f1f1f1;
+	line-height: 42px;
+	color: #373737;
+}
+.registerarea .login {
+	float: right;
+	font-weight: 400;
+	font-size: 14px;
+}
+.text_red {
+	color: #c81523;
+}
+.reg-form {
+	width: 600px;
+	margin: 50px auto;
+}
+.reg-form li {
+	margin: 20px 0;
+}
+.reg-form label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+.reg-form input {
+	width: 242px;
+	height: 37px;
+	border: 1px solid #ccc;
+}
+.error {
+	color: #c81523;
+	font-size: 14px;
+	margin-left: 7px;
+}
+.error_icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background-color: #c81523;
+	border-radius: 20px;
+	margin-top: -2px;
+}

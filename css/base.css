@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*星号的渲染效率低*/
+	box-sizing: border-box;
+}
+em,
+i {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #61656b;
+}
+button,
+input {
+	border: 0;
+	/*去掉默认灰色边框*/
+	outline: none;
+}
+.clearfix:after{
+       display:block;
+       clear:both;
+       content:"";
+       visibility:hidden;
+       height:0}
+   .clearfix{zoom:1}
