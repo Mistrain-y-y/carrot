@@ -4,12 +4,8 @@
 
 ## index.html 首页
 
-[查看 index.html](https://mistrain-y-y.github.io/carrot/)
+[查看 index.html 静态页面](https://mistrain-y-y.github.io/carrot/)
 
 ## list.html 列表页面
 
-[查看 list.html](https://mistrain-y-y.github.io/list/)
-
 ## register 注册页面
-
-[查看 register.html](https://mistrain-y-y.github.io/register/)
